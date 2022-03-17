@@ -12,11 +12,23 @@ public class Team {
         this.team_passed = new ArrayList<Participant>();
     }
 
+    public void showInfo() {
+        String info = "Участники команды " + this.getName() + ":";
+        for (Participant participant : team) {
+            info = info + "\n" + participant;
+        }
+        System.out.println(info);
+    }
+
     public void showResults() {
         for (Participant participant : team_passed) {
-            System.out.println(participant.getName() + " прошёл полосу препятствий");
+            System.out.println(participant.getName() + " полностью прошёл полосу препятствий");
         }
 
+    }
+
+    public String getName() {
+        return name;
     }
 
     public Participant[] getTeam() {

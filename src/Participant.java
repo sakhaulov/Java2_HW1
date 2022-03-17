@@ -9,12 +9,16 @@ public class Participant {
         System.out.println("Создали участника по имени " + this.name + " с уровнем способности " + this.ability);
     }
 
+    @Override
+    public String toString() {
+        return "Участник " + this.getName() + " с уровнем способностей " + this.getAbility();
+    }
+
+
     public String getName() {
         return name;
     }
 
-    public int getAbility() {
-        return ability;
-    }
+    public int getAbility() { return ability; }
 
 }

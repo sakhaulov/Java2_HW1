@@ -16,7 +16,6 @@ public class Course {
                 if (team_on_course[i].getAbility() >= this.course[j].getDifficulty()) {
                     result++;
                     System.out.println("Участник " + team_on_course[i].getName() + " успешно прошёл испытание " + this.course[j].getName());
-                    System.out.println("result = " + result);
                 }
             }
             if (result == 3) {
@@ -26,7 +25,6 @@ public class Course {
         }
 
     }
-
 
 
 }

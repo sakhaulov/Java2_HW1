@@ -19,6 +19,7 @@ public class Main {
 
         Course course = new Course("Полоса препятствий", new Challenge[]{swimming, running, riding});
 
+        team.showInfo();
         course.doIt(team);
         team.showResults();
     }

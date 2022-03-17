@@ -18,7 +18,7 @@ public class Course {
                     System.out.println("Участник " + team_on_course[i].getName() + " успешно прошёл испытание " + this.course[j].getName());
                 }
             }
-            if (result == 3) {
+            if (result == course.length) {
                 team.getTeam_passed().add(team_on_course[i]);
             }
 
